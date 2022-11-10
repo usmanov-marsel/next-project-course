@@ -34,9 +34,9 @@
 }
 
 .green {
-    color: var(--green);
-    background-color: var(--gray-light);
-    font-weight: bold;
+	color: var(--green);
+	background: var(--green-light);
+	font-weight: bold;
 }
 
 .primary {
