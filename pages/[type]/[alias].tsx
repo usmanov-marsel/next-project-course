@@ -10,8 +10,12 @@ import { firstLevelMenu } from "../../helpers/helper";
 import { TopPageComponent } from "../../page-components";
 import { API } from "../../helpers/api";
 import Head from "next/head";
+import { Error404 } from "../404";
 
 function TopPage({ firstCategory, page, products }: TopPageProps) {
+  if (!page || !products) {
+    return <Error404 />;
+  }
   return (
     <>
       <Head>
