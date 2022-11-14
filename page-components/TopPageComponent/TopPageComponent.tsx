@@ -35,7 +35,7 @@ export const TopPageComponent = ({ page, products, firstCategory }: TopPageCompo
       <div className={styles.title}>
         <h1 className={styles.h1}>{page.title}</h1>
         {products && (
-          <Tag color="gray" size="m">
+          <Tag color="gray" size="m" aria-label={products.length + "элементов"}>
             {products.length}
           </Tag>
         )}
