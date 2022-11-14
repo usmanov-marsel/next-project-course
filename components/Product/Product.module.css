@@ -130,15 +130,13 @@
 	align-self: center;
 }
 
-.closed {
+.reviews {
 	overflow: hidden;
-	max-height: 0;
-	padding: 0;
+	padding: 30px;
 }
 
-.opened {
-	max-height: auto;
-	padding: 30px;
+.reviewsHidden {
+	height: 0;
 }
 
 .rateTitle a {

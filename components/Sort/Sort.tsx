@@ -16,7 +16,7 @@ interface SortProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HT
 export const Sort = ({ sort, setSort, className, ...props }: SortProps) => {
   return (
     <div className={cn(styles.sort, className)} {...props}>
-      <span
+      <button
         onClick={() => setSort(SortEnum.Rating)}
         className={cn({
           [styles.active]: sort === SortEnum.Rating,
@@ -24,8 +24,8 @@ export const Sort = ({ sort, setSort, className, ...props }: SortProps) => {
       >
         <SortIcon className={styles.sortIcon} />
         По рейтингу
-      </span>
-      <span
+      </button>
+      <button
         onClick={() => setSort(SortEnum.Price)}
         className={cn({
           [styles.active]: sort === SortEnum.Price,
@@ -33,7 +33,7 @@ export const Sort = ({ sort, setSort, className, ...props }: SortProps) => {
       >
         <SortIcon className={styles.sortIcon} />
         По цене
-      </span>
+      </button>
     </div>
   );
 };
