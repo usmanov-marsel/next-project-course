@@ -1,13 +1,14 @@
 .reviewForm {
-	font-size: 14px;
-	line-height: 24px;
 	display: grid;
 	grid-template-columns: [start] auto 1fr auto [end];
 	align-items: center;
+	font-size: 14px;
+	line-height: 24px;
 	gap: 20px 30px;
 }
 
-.description, .submit {
+.description,
+.submit {
 	grid-column: start / end;
 }
 
@@ -26,10 +27,10 @@
 }
 
 .panel {
-	padding: 20px;
 	position: relative;
-	border-radius: 5px;
 	margin-top: 20px;
+	padding: 20px;
+	border-radius: 5px;
 }
 
 .success {
