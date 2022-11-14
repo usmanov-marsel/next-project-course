@@ -6,7 +6,7 @@ import { Button } from "../Button/Button";
 import SearchIcon from "./search.svg";
 import { useRouter } from "next/router";
 
-interface SearchProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {}
+interface SearchProps extends DetailedHTMLProps<HTMLAttributes<HTMLFormElement>, HTMLFormElement> {}
 
 export const Search = ({ className, ...props }: SearchProps) => {
   const [search, setSearch] = useState("");
@@ -28,7 +28,7 @@ export const Search = ({ className, ...props }: SearchProps) => {
   };
 
   return (
-    <div className={cn(className, styles.search)} {...props}>
+    <form className={cn(className, styles.search)} {...props} role="search">
       <Input
         className={styles.input}
         placeholder="Поиск..."
@@ -44,6 +44,6 @@ export const Search = ({ className, ...props }: SearchProps) => {
       >
         <SearchIcon />
       </Button>
-    </div>
+    </form>
   );
 };

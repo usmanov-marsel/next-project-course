@@ -13,6 +13,7 @@ export const Textarea = forwardRef(
     return (
       <div className={cn(className, styles.textareaWrapper)}>
         <textarea
+          role="alert"
           className={cn(styles.textarea, {
             [styles.error]: error,
           })}
