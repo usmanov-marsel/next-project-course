@@ -1,6 +1,5 @@
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from "next";
 import { useState } from "react";
-import { Button, P, Rating, Tag } from "../../components";
 import { withLayout } from "../../layout/Layout";
 import axios from "axios";
 import { MenuItem } from "../../interfaces/menu.interface";
@@ -9,8 +8,6 @@ import { ParsedUrlQuery } from "querystring";
 import { API } from "../../helpers/api";
 
 function Type({ firstCategory }: TypeProps) {
-  const [rating, setRating] = useState(4);
-
   return <>Type : {firstCategory}</>;
 }
 

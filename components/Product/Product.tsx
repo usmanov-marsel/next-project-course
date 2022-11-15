@@ -36,6 +36,7 @@ export const Product = motion(
       const formatter = new Intl.NumberFormat("ru", {
         style: "currency",
         currency: "RUB",
+        minimumFractionDigits: 0,
         maximumFractionDigits: 0,
       });
 

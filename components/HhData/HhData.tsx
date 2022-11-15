@@ -9,6 +9,7 @@ export const HhData = ({ count, juniorSalary, middleSalary, seniorSalary }: HhDa
   const formatter = new Intl.NumberFormat("ru", {
     style: "currency",
     currency: "RUB",
+    minimumFractionDigits: 0,
     maximumFractionDigits: 0,
   });
   return (

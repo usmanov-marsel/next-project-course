@@ -1,6 +1,6 @@
 import styles from "./Search.module.css";
 import cn from "classnames";
-import { DetailedHTMLProps, HTMLAttributes, KeyboardEvent, ReactNode, useState } from "react";
+import { DetailedHTMLProps, HTMLAttributes, KeyboardEvent, useState } from "react";
 import { Input } from "../Input/Input";
 import { Button } from "../Button/Button";
 import SearchIcon from "./search.svg";
